@@ -1,0 +1,71 @@
+.grad {
+  background-image: linear-gradient(skyblue, blueviolet);
+}
+
+.greetings {
+
+  font-family: "Lucida Console", "Courier New", cursive;
+  text-align: center;
+  color: black;
+  text-shadow: 2px 2px 5px yellow;
+
+}
+
+.name {
+  background-color: lightblue;
+  width: 500px;
+  border: 1px solid black;
+  padding: 10px;
+  margin: 10px;
+  overflow:auto;
+}
+
+.img2 {
+
+float: right;
+}
+
+.city {
+
+  background-color: lightgrey;
+  width: 400px;
+  border: 1px solid black;
+  padding: 10px;
+  margin: 10px;
+
+}
+
+.job {
+
+  background-color: lightgreen;
+  right:60px;
+  width: 400px;
+  border: 1px solid black;
+  padding: 10px;
+  margin:10px;
+  top:60px;
+  position: absolute;
+}
+
+.ol {
+  font-size: 20px;
+  font-family: Times New Roman, cursive;
+}
+
+a:link, a:visited {
+  background-color: white;
+  color: black;
+  border: 2px solid green;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+a:hover, a:active {
+  background-color: yellowgreen;
+  color: white;
+}
+.background-color{
+   background-image: linear-gradient(skyblue, blueviolet);
+}
