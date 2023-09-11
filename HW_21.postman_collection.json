@@ -1,0 +1,221 @@
+{
+	"info": {
+		"_postman_id": "7ffa9914-2cbe-4621-81e4-02407759b92f",
+		"name": "HW_21",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "29596972"
+	},
+	"item": [
+		{
+			"name": "https://qauto.forstudy.space/api/auth/signup",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"Arthur\",\r\n  \"lastName\": \"Fridrikh\",\r\n  \"email\": \"arthur.fridrikh@gmail.com\",\r\n  \"password\": \"Zxcvbn1230\",\r\n  \"repeatPassword\": \"Zxcvbn1230\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://qauto.forstudy.space/api/auth/signup",
+					"protocol": "https",
+					"host": [
+						"qauto",
+						"forstudy",
+						"space"
+					],
+					"path": [
+						"api",
+						"auth",
+						"signup"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://qauto.forstudy.space/api/auth/signin",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"email\": \"arthur.fridrikh@gmail.com\",\r\n  \"password\": \"Zxcvbn1230\",\r\n  \"remember\": false\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://qauto.forstudy.space/api/auth/signin",
+					"protocol": "https",
+					"host": [
+						"qauto",
+						"forstudy",
+						"space"
+					],
+					"path": [
+						"api",
+						"auth",
+						"signin"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://qauto.forstudy.space/api/users/profile",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"status\": \"ok\",\r\n  \"data\": {\r\n    \"userId\": 1,\r\n    \"photoFilename\": \"default-user.png\",\r\n    \"name\": \"Arthur\",\r\n    \"lastName\": \"Fridrikh\"\r\n  }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://qauto.forstudy.space/api/users/profile",
+					"protocol": "https",
+					"host": [
+						"qauto",
+						"forstudy",
+						"space"
+					],
+					"path": [
+						"api",
+						"users",
+						"profile"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://qauto.forstudy.space/api/cars/models",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://qauto.forstudy.space/api/cars/models",
+					"protocol": "https",
+					"host": [
+						"qauto",
+						"forstudy",
+						"space"
+					],
+					"path": [
+						"api",
+						"cars",
+						"models"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://qauto.forstudy.space/api/cars",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "https://qauto.forstudy.space/api/cars",
+					"protocol": "https",
+					"host": [
+						"qauto",
+						"forstudy",
+						"space"
+					],
+					"path": [
+						"api",
+						"cars"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://qauto.forstudy.space/api/cars",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://qauto.forstudy.space/api/cars",
+					"protocol": "https",
+					"host": [
+						"qauto",
+						"forstudy",
+						"space"
+					],
+					"path": [
+						"api",
+						"cars"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://qauto.forstudy.space/api/expenses",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://qauto.forstudy.space/api/expenses",
+					"protocol": "https",
+					"host": [
+						"qauto",
+						"forstudy",
+						"space"
+					],
+					"path": [
+						"api",
+						"expenses"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://qauto.forstudy.space/api/expenses",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"carId\": 54468,\r\n  \"reportedAt\": \"2023-09-11\",\r\n  \"mileage\": 11,\r\n  \"liters\": 11,\r\n  \"totalCost\": 11,\r\n  \"forceMileage\": false\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://qauto.forstudy.space/api/expenses",
+					"protocol": "https",
+					"host": [
+						"qauto",
+						"forstudy",
+						"space"
+					],
+					"path": [
+						"api",
+						"expenses"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
