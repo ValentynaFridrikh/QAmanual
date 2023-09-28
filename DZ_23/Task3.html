@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+
+<script type="text/javascript">
+	let Stazhroboty =Number (prompt ("Введіть стаж роботи"));
+let Zarplata =Number (prompt ("Введіть зарплату"));
+let NewSalary; 
+
+if (Stazhroboty >=1 && Stazhroboty <=3)
+{NewSalary=Zarplata* 0.1+ Zarplata;
+  document.writeln (Zarplata* 0.1+ Zarplata);}
+
+else if (Stazhroboty >=4)
+{ NewSalary=Zarplata* 0.2 +Zarplata;
+  document.writeln (Zarplata* 0.2 +Zarplata);}
+
+if (NewSalary <=4000)
+{document.writeln ("Нова зарплатня =" , NewSalary+1000);}
+else if (NewSalary >=5000)
+{document.writeln ("Нова зарплатня =",  NewSalary+500);}
+
+
+
+</script>
+</body>
+</html>
